@@ -128,7 +128,85 @@ class HomePageState extends State<HomePage> {
                     ),
                     Container(
                       height: 25.h,
-                      color: Colors.red,
+                      width: 100.w,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(
+                          20,
+                        ),
+                        color: Colors.red,
+                      ),
+                      padding: EdgeInsets.all(
+                        10.sp,
+                      ),
+                      child: SizedBox(
+                        width: 100.w,
+                        child: Row(
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Text(
+                                      'Upto ',
+                                      style: TextStyle(
+                                        fontSize: 22.sp,
+                                      ),
+                                    ),
+                                    Text(
+                                      '80% off',
+                                      style: TextStyle(
+                                        fontSize: 22.sp,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Text(
+                                  'on Electronics',
+                                  style: TextStyle(
+                                    fontSize: 22.sp,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 5.h,
+                                ),
+                                Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 5.w,
+                                    ),
+                                    ElevatedButton(
+                                      onPressed: () {},
+                                      child: Text(
+                                        'Shop now',
+                                        style: TextStyle(
+                                          fontSize: 10.sp,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.end,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  const SizedBox(),
+                                  Icon(
+                                    Icons.devices_other_rounded,
+                                    size: 90.sp,
+                                  ),
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
                     ),
                     SizedBox(
                       height: 2.h,
